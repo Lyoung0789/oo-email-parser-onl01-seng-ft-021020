@@ -8,13 +8,15 @@ class EmailAddressParser
   @@email =[]
   
   def initialize(email)
-    @@email << email
+    @email = email 
+    
     
   
   end 
 
   def parse
-    @@email.join.split(", ")
+    @@email<<@email.split(", ")
+    @@email.flatten.uniq
   end 
 
 end 
