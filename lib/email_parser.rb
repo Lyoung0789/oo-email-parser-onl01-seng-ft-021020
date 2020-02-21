@@ -14,7 +14,7 @@ class EmailAddressParser
 
   def parse
     new_arry= @email.split(/[, ]/)
-    new_arry.reject {|space| space.empty?}.uniq
+    new_arry.delete_if {|space| space.empty?}.uniq
   end 
 
 end 
