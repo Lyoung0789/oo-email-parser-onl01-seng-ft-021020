@@ -15,7 +15,7 @@ class EmailAddressParser
   end 
 
   def parse
-    @@email<<@email.split(", ")
+    @@email << @email.split(", ")
     @@email.flatten.uniq
   end 
 
