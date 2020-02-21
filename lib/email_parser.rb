@@ -13,7 +13,7 @@ class EmailAddressParser
   end 
 
   def parse
-    @@email.uniq.join.split(/, |_/)
+    @@email.uniq.join.split(/, /)
   end 
 
 end 
