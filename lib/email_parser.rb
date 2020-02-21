@@ -13,8 +13,8 @@ class EmailAddressParser
   end 
 
   def parse
-    email = @email.split(/[, ]/)
-    email.reject {|space| space.empty?}.uniq
+    new_arry= @email.split(/[, ]/)
+    new_arry.reject {|space| space.empty?}.uniq
   end 
 
 end 
